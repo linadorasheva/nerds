@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__top">
+        <div class="logo">
+          <a class="logo__link" href="index.html"><img class="logo__img" src="img/logo.png"></a>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Студия</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Клиенты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active" href="catalog.html">Магазин</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="cart-block">
+          <a class="cart-block__link" href="#">Корзина</a>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <h1 class="header__bottom-title">Магазин готовых шаблонов</h1>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__container main__container--catalog">
+      <form class="form">
+        <div class="form-block form-block--filter">
+          <div class="form-block__title">стоимость:</div>
+          <div class="form-block__range">
+            <div class="form-block__range-scale">
+              <div class="form-block__range-bar"></div>
+            </div>
+            <div class="form-block__range-toggle form-block__range-toggle--min"></div>
+            <div class="form-block__range-toggle form-block__range-toggle--max"></div>
+          </div>
+          <div class="form-block__price">
+            <label class="form-block__price-label form-block__price-label--min">ОТ <input class="form-block__price-input" type="text" name="min-price" value="0"></label>
+            <label class="form-block__price-label  form-block__price-label--max">ДО <input class="form-block__price-input" type="text" name="max-price" value="15 000"></label>
+          </div>
+        </div>
+        <div class="form-block form-block--grid">
+          <div class="form-block__title">сетка:</div>
+          <div class="form-block__field">
+            <input class="form-block__input" type="radio" name="grid" checked>
+            <label class="form-block__label form-block__label--radio">Адаптивная</label>
+          </div>
+          <div class="form-block__field">
+            <input class="form-block__input" type="radio" name="grid">
+            <label class="form-block__label form-block__label--radio">Фиксированная</label>
+          </div>
+          <div class="form-block__field">
+            <input class="form-block__input" type="radio" name="grid">
+            <label class="form-block__label form-block__label--radio">Резиновая</label>
+          </div>
+        </div>
+        <div class="form-block form-block--features">
+          <div class="form-block__title">особенности:</div>
+          <div class="form-block__field">
+            <input class="form-block__input" type="checkbox" name="slider" checked>
+            <label class="form-block__label form-block__label--checkbox">Слайдер</label>
+          </div>
+          <div class="form-block__field">
+            <input class="form-block__input" type="checkbox" name="features">
+            <label class="form-block__label form-block__label--checkbox">Блок преимуществ</label>
+          </div>
+          <div class="form-block__field">
+            <input class="form-block__input" type="checkbox" name="news" checked>
+            <label class="form-block__label form-block__label--checkbox">Новости</label>
+          </div>
+          <div class="form-block__field">
+            <input class="form-block__input" type="checkbox" name="gallery">
+            <label class="form-block__label form-block__label--checkbox">Галерея</label>
+          </div>
+          <div class="form-block__field">
+            <input class="form-block__input" type="checkbox" name="cart">
+            <label class="form-block__label form-block__label--checkbox">Корзина</label>
+          </div>
+        </div>
+        <a class="form-btn" href="#">Показать</a>
+      </form>
+
+      <div class="catalog">
+        <div class="catalog__title">Сортировать:</div>
+        <div class="catalog__sort">
+          <span class="catalog__sort-item">по цене</span>
+          <span class="catalog__sort-item">по типу</span>
+          <span class="catalog__sort-item">по названию</span>
+        </div>
+        <div class="catalog__list">
+          <div class="catalog__card">
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <img class="catalog__card-img" src="img/sedona.jpg">
+            <div class="catalog__card-info">
+              <div class="catalog__card-title">Sedona</div>
+              <p class="catalog__card-descr">Информационный сайт для туристов</p>
+              <a class="catalog-btn" href="#">9 900 руб.</a>
+            </div>
+          </div>
+
+          <div class="catalog__card">
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <img src="img/pink.jpg">
+            <div class="catalog__card-info">
+              <div class="catalog__card-title">Pink app</div>
+              <p class="catalog__card-descr catalog__card-descr--pink">Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="catalog-btn" href="#">9 900 руб.</a>
+            </div>
+          </div>
+
+          <div class="catalog__card">
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <img src="img/borodinsky.jpg">
+            <div class="catalog__card-info">
+              <div class="catalog__card-title">Barbershop</div>
+              <p class="catalog__card-descr">Сайт салоны красоты. Для мужчин, да.</p>
+              <a class="catalog-btn" href="#">9 900 руб.</a>
+            </div>
+          </div>
+
+          <div class="catalog__card">
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <img src="img/mishka.jpg">
+            <div class="catalog__card-info">
+              <div class="catalog__card-title">Mishka</div>
+              <p class="catalog__card-descr">Интернет-магазин вязаных игрушек</p>
+              <a class="catalog-btn" href="#">9 900 руб.</a>
+            </div>
+          </div>
+
+          <div class="catalog__card">
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <img src="img/aplus.jpg">
+            <div class="catalog__card-info">
+              <div class="catalog__card-title">A plus</div>
+              <p class="catalog__card-descr catalog__card-descr--aplus">Лендинг курсов повышения квалификации</p>
+              <a class="catalog-btn" href="#">9 900 руб.</a>
+            </div>
+          </div>
+
+          <div class="catalog__card">
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <img src="img/kvast.jpg">
+            <div class="catalog__card-info">
+              <div class="catalog__card-title">Кваст</div>
+              <p class="catalog__card-descr catalog__card-descr--kvast">Промо-сайт производителя крафтового кваса</p>
+              <a class="catalog-btn" href="#">9 900 руб.</a>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <a class="pagination__item pagination__item--current" >1</a>
+          <a class="pagination__item" href="#">2</a>
+          <a class="pagination__item" href="#">3</a>
+          <a class="pagination__item pagination__item--next" href="#">Следующая</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="map">
+      <div class="map__contacts">
+        <div class="map__contacts-title">n&#203;rds design studio</div>
+        <div class="map__contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/3</div>
+        <div class="map__contacts-phone">тел. +7 (812) 275-75-75</div>
+        <button class="map-btn">напишите нам</button>
+      </div>
+    </div>
+  </main>
+<!-- футер -->
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="social">
+        <a class="social__link social__link--vk" href="#">Вконтакте</a>
+        <a class="social__link social__link--fb" href="#">Фейсбук</a>
+        <a class="social__link social__link--inst" href="#">Инстаграм</a>
+      </div>
+      <div class="page-footer__promo">
+        <div class="page-footer__promo-title">Давайте дружить, это выгодно!</div>
+        <div class="page-footer__promo-bonus">Скидка 10% для друзей из социальных сетей</div>
+      </div>
+    </div>
+  </footer>
+<!-- POP-UP -->
+<form class="write">
+  <div class="write__container">
+    <div class="write__title">Напишите нам</div>
+    <button class="write-close" type="button" title="close">закрыть</button>
+    <div class="write__form">
+      <div class="write__wrapp">
+        <label class="write__label" for="name">Ваше имя:</label>
+        <input class="write__input" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" tabindex="1">
+      </div>
+      <div class="write__wrapp">
+        <label class="write__label" for="email">Ваш e-mail:</label>
+        <input class="write__input write__input--email" type="email" name="email" id="email" placeholder="Для отправки ответа" tabindex="2">
+      </div>
+      <div class="write__wrapp">
+        <label class="write__label" for="text">Текст письма:</label>
+        <textarea class="write__textarea" id="text" placeholder="В свободной форме" tabindex="3"></textarea>
+      </div>
+    </div>
+    <button class="write-btn">отправить</button>
+  </div>
+</form>
+<script src="js/popup.js"></script>
+</body>
+</html>

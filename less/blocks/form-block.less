@@ -1,0 +1,181 @@
+.form-block {
+  width: 260px;
+  margin-bottom: 53px;
+}
+
+.form-block__title {
+  margin-bottom: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form-block__range {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+
+  border-radius: 5px;
+  background: #eeeeee;
+}
+
+.form-block__range-scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.form-block__range-bar {
+  width: 145px;
+  height: 2px;
+  background: #00ca74;
+}
+
+.form-block__range-toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+
+  &--min {
+    left: 20px;
+  }
+
+  &--max {
+    left: 147px;
+  }
+}
+
+.form-block__price {
+  font-size: 0;
+}
+
+.form-block__price-input {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 8px;
+  padding: 8px 10px;
+  text-align: center;
+  line-height: 22px;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #eeeeee;
+}
+
+.form-block__price-label {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+  display: inline-block;
+  width: 50%;
+
+  &--max {
+    text-align: right;
+  }
+}
+
+// блок сетка и особенности
+.form-block--grid {
+  font-size: 0;
+}
+
+.form-block__field {
+  margin-bottom: 16px;
+}
+
+.form-block__input {
+  display: none;
+}
+
+.form-block__label {
+  position: relative;
+  padding-left: 35px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+}
+
+.form-block__label--radio:hover,
+.form-block__label--checkbox:hover {
+  color: #000000;
+  opacity: 1;
+}
+
+.form-block__label--radio:active,
+.form-block__label--checkbox:active {
+  opacity: 0.3;
+}
+
+.form-block__label--radio::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+
+  width: 25px;
+  height: 25px;
+  opacity: 0.4;
+}
+
+.form-block__label--checkbox::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+
+  width: 23px;
+  height: 23px;
+  opacity: 0.4;
+}
+
+.form-block__label--radio:hover::before,
+.form-block__label--checkbox:hover::before {
+  opacity: 1;
+}
+
+.form-block__label--radio:active::before,
+.form-block__label--checkbox:active::before {
+  opacity: 0.1;
+}
+
+.form-block__label--radio::before,
+.form-block__label--checkbox::before {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.form-block__label--radio::before {
+  background-position: -10px -255px;
+}
+
+.form-block__input:checked + .form-block__label--checkbox::before,
+.form-block__input:checked + .form-block__label--radio::before {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.form-block__input:checked + .form-block__label--radio::before {
+  background-position: -10px -300px;
+}
+
+.form-block__label--checkbox::before {
+  background-position: -10px -45px;
+}
+
+.form-block__input:checked + .form-block__label--checkbox::before {
+  width: 27px;
+  height: 23px;
+  background-position: -10px -88px;
+}
